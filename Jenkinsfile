@@ -241,6 +241,7 @@ options {
      steps {
          sh '''
         cd  redis
+	ls
         docker build -t devopseasylearning2021/challenger-redis:${BUILD_NUMBER} . 
         cd -
     
